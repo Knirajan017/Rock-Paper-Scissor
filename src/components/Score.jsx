@@ -1,4 +1,7 @@
+import { useScoreContext } from "../assets/images/context";
+
 function Score() {
+	const { score } = useScoreContext();
 	return (
 		<div className="logo-score-container">
 			<div className="logo">
@@ -8,6 +11,7 @@ function Score() {
 			{/* Score */}
 			<div className="score-container">
 				<p>SCORE</p>
+				<h1>{score}</h1>
 			</div>
 		</div>
 	);
