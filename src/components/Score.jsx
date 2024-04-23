@@ -11,7 +11,7 @@ function Score() {
 			{/* Score */}
 			<div className="score-container">
 				<p>SCORE</p>
-				<h1>{score}</h1>
+				<p>{score}</p>
 			</div>
 		</div>
 	);

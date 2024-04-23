@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	overflow-x: hidden;
+	overflow: hidden;
 }
 
 :root {
@@ -20,6 +20,9 @@
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+
+	--border-test: solid 1px blue;
+	--score-color: #f9fbfa;
 }
 
 a {
@@ -66,4 +69,63 @@ button:focus-visible {
 	button {
 		background-color: #f9f9f9;
 	}
+}
+.container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.logo-score-container {
+	min-width: 30rem;
+	width: 100%;
+	height: 8rem;
+	max-width: 60%;
+	border: 2px solid rgb(177, 175, 175);
+	border-radius: 10px;
+	padding: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.score-container {
+	height: 100%;
+	width: 7rem;
+	padding-bottom: 0.2rem;
+	border: 1px solid transparent;
+	border-radius: 10px;
+	background-color: #f9fbfa;
+	color: #636665;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.score-container > p:first-child {
+	letter-spacing: 0.2rem;
+}
+.score-container > p:last-child {
+	/* border: var(--border-test); */
+	height: auto;
+	font-size: 4rem;
+	line-height: 1;
+}
+
+.play-icon-container {
+	padding: 2rem;
+	width: 150px;
+	background-color: white;
+	height: auto;
+	border-width: 1rem;
+	border-style: solid;
+	border-radius: 50%;
+}
+
+.game-container img {
+	width: 100%;
+	height: auto;
 }
