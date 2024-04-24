@@ -137,10 +137,22 @@ button:focus-visible {
 	justify-items: center;
 	align-items: center;
 }
-
-.game-container div:last-child {
+.game-container-result {
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1fr;
+	background: none;
+	/* justify-items: center; */
+	/* align-items: center; */
+}
+.game-container div:nth-child(3) {
 	grid-column: span 2;
 }
+
+.result-msg-container,
+.hidden {
+	display: none;
+}
+
 .play-icon-container {
 	padding: 2rem;
 	width: 150px;
@@ -149,6 +161,7 @@ button:focus-visible {
 	border-width: 1rem;
 	border-style: solid;
 	border-radius: 50%;
+	cursor: pointer;
 }
 
 .game-container img {

@@ -1,7 +1,7 @@
-import { useScoreContext } from "../assets/images/context";
+import { useGlobalContext } from "../context";
 
 function Score() {
-	const { score } = useScoreContext();
+	const { score } = useGlobalContext();
 	return (
 		<div className="logo-score-container">
 			<div className="logo">
